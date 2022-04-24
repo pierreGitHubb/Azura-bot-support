@@ -8,7 +8,7 @@ const client = new Discord.Client(
     {intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MESSAGE_TYPING"]}
 )
 
-client.login("OTY1OTI5OTgwNzQxNzA5ODI0.Yl6WZQ.tWVFTLv_8gjMy9Vqau2h_0455l0")
+client.login(process.env.token)
 
 client.on("ready", ()=>{
     console.log("Ready")
